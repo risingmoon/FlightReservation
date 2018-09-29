@@ -1,7 +1,9 @@
 #include "pch.h"
+#include "Flight.h"
 #include <iostream>
+
 
 int main()
 {
-	std::cout << "Hello World!\n";
+	Flight flight;
 }
