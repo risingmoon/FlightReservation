@@ -2,6 +2,7 @@
 #include "Flight.h"
 #include "Schedule.h"
 #include "Passenger.h"
+#include "Ticket.h"
 #include <string>
 #include <iostream>
 
@@ -25,4 +26,5 @@ int main()
 
 	Passenger passenger2("Jane", "Doe");
 
+	Ticket ticket(passenger1, flight1);
 }
