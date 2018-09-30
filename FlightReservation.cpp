@@ -5,7 +5,10 @@
 
 int main()
 {
-	Flight flight;
-	flight.setNumber("UA123");
-	flight.display();
+	Flight flight1("AA123");
+	flight1.display();
+
+	Flight flight2;
+	flight2.setNumber("UA123");
+	flight2.display();
 }
