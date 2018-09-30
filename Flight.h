@@ -4,8 +4,8 @@
 class Flight
 {
 public:
-	Flight() = default;
-private:
+	void setNumber(const std::string flightNumber);
+	std::string getNumber();
+private: 
 	std::string number;
 };
-

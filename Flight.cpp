@@ -2,11 +2,10 @@
 #include "Flight.h"
 #include <string>
 
-namespace FlightReservation
-{
-	class Flight
-	{
-	private:
-		std::string number;
-	};
+void Flight::setNumber(std::string flightNumber) {
+	number = flightNumber;
+}
+
+std::string Flight::getNumber() {
+	return number;
 }
