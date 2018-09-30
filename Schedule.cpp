@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void Schedule::addFlight(Flight& flight) {
+void Schedule::pushFlight(Flight& flight) {
 	flights.push_back(flight);
 }
 

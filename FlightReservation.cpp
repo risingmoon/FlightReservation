@@ -18,7 +18,7 @@ int main()
 		"SEA", "HOU");
 
 	Schedule schedule;
-	schedule.addFlight(flight);
+	schedule.pushFlight(flight);
 
 	Ticket ticket(passenger, flight);
 

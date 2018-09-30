@@ -7,7 +7,7 @@ class Schedule
 public: 
 	Schedule() = default;
 
-	void addFlight(Flight& flight);
+	void pushFlight(Flight& flight);
 	void display();
 private:
 	vector<Flight> flights;

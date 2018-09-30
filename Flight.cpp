@@ -25,7 +25,7 @@ Flight::Flight(
 
 void Flight::display() {
 	cout << "Flight Information" << endl;
-	cout << string(21, '-') << endl;
+	cout << string(40, '-') << endl;
 	cout << "Airline: " << getAirline() << endl;
 	cout << " Number: " << getNumber() << endl;
 	cout << "   Time: " << getDepartureTime() << "-" << getArrivalTime() << endl;
