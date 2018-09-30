@@ -8,17 +8,21 @@
 
 int main()
 {
-	// TODO: Reserve a Seat
+
 	Passenger passenger("Jane", "Doe");
 
 	Flight flight(
 		"American", "AA123",
 		"7:00 AM", "12:00 PM",
 		"12/01/2018", "12/01/2018",
-		"Seattle", "Houston");
+		"SEA", "HOU");
 
 	Schedule schedule;
 	schedule.addFlight(flight);
+
+	Ticket ticket(passenger, flight);
+
+	// TODO: Reserve a Seat
 
 	// Flight Schedule
 	schedule.display();
@@ -28,8 +32,6 @@ int main()
 
 	// Display Passenger Information
 	passenger.display();
-
-	Ticket ticket(passenger, flight);
 
 	// TODO: Display User Ticket Information
 	// TODO: Exit Program
