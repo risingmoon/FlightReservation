@@ -10,7 +10,7 @@ Passenger::Passenger(string fName, string lName)
 
 void Passenger::display() {
 	cout << "Passenger Information" << endl;
-	cout << string(20, '-') << endl;
+	cout << string(21, '-') << endl;
 	cout << "First Name: " << getFirstName() << endl;
 	cout << "Last Name: " << getLastName() << endl;
 	cout << endl;

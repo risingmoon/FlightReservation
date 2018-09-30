@@ -18,4 +18,6 @@ void Schedule::display() {
 	for (Flight flight : flights) {
 		cout << flight.getNumber() << endl;
 	}
+
+	cout << endl;
 }
