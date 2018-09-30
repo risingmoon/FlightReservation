@@ -33,6 +33,8 @@ int main()
 	// Display Passenger Information
 	passenger.display();
 
-	// TODO: Display User Ticket Information
+	// Display User Ticket Information
+	ticket.display();
+
 	// TODO: Exit Program
 }
