@@ -15,14 +15,14 @@ int main()
 		"12/01/2018", "12/01/2018",
 		"Seattle", "Houston");
 
-	// Flight Details
-	flight.display();
-
 	Schedule schedule;
 	schedule.addFlight(flight);
 
 	// Flight Schedule
 	schedule.display();
+
+	// Flight Details
+	flight.display();
 
 	Passenger passenger("Jane", "Doe");
 
