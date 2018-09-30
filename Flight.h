@@ -6,13 +6,35 @@ class Flight
 {
 public:
 	Flight() = default;
-	Flight(string flightNumber);
+	Flight(
+		string flightAirline,
+		string flightNumber,
+		string flightDepartureTime,
+		string flightArrivalTime,
+		string flightDepartureDate,
+		string flightArrivalDate,
+		string flightOrigin,
+		string flightDestination);
 	void display();
 
 	//Getter and Setter
-	void setNumber(string flightNumber);
+	string getAirline();
 	string getNumber();
+	string getDepartureTime();
+	string getArrivalTime();
+	string getDepartureDate();
+	string getArrivalDate();
+	string getOrigin();
+	string getDestination();
+
 
 private: 
+	string airline;
 	string number;
+	string departureTime;
+	string arrivalTime;
+	string departureDate;
+	string arrivalDate;
+	string origin;
+	string destination;
 };
