@@ -8,23 +8,15 @@
 
 int main()
 {
-	Flight flight1("AA123");
-	flight1.display();
-
-	Flight flight2;
-	flight2.setNumber("UA123");
-	flight2.display();
+	Flight flight("AA123");
+	flight.display();
 
 	Schedule schedule;
-	schedule.addFlight(flight1);
-	schedule.addFlight(flight2);
+	schedule.addFlight(flight);
 	schedule.display();
 
-	Passenger passenger1;
-	passenger1.setFirstName("John");
-	passenger1.setLastName("Doe");
+	Passenger passenger("Jane", "Doe");
+	passenger.display();
 
-	Passenger passenger2("Jane", "Doe");
-
-	Ticket ticket(passenger1, flight1);
+	Ticket ticket(passenger, flight);
 }

@@ -9,6 +9,8 @@ public:
 	Passenger() = default;
 	Passenger(string firstName, string lastName);
 
+	void display();
+
 	//Getters and Setters
 	void setFirstName(string fName);
 	string getFirstName();
