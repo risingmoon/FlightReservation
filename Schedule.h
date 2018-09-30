@@ -8,6 +8,7 @@ public:
 	Schedule() = default;
 
 	void addFlight(Flight& flight);
+	void display();
 private:
 	vector<Flight> flights;
 };
