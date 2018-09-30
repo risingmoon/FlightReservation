@@ -1,11 +1,17 @@
 #include "pch.h"
 #include "Flight.h"
+#include <iostream>
 #include <string>
 
-void Flight::setNumber(std::string flightNumber) {
+using namespace std;
+
+void Flight::display() {
+	cout << "Flight Number: " << getNumber() << endl;
+}
+void Flight::setNumber(string flightNumber) {
 	number = flightNumber;
 }
 
-std::string Flight::getNumber() {
+string Flight::getNumber() {
 	return number;
 }

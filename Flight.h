@@ -1,13 +1,16 @@
 #pragma once
 #include <string>
 
+using namespace std;
 class Flight
 {
 public:
+	void display();
 
 	//Getter and Setter
-	void setNumber(const std::string flightNumber);
-	std::string getNumber();
+	void setNumber(string flightNumber);
+	string getNumber();
+
 private: 
-	std::string number;
+	string number;
 };
