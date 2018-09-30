@@ -10,6 +10,29 @@ void Schedule::pushFlight(Flight& flight) {
 	flights.push_back(flight);
 }
 
+void Schedule::addFlight(
+	string airline,
+	string number,
+	string departureTime,
+	string arrivalTime,
+	string departureDate,
+	string arrivalDate,
+	string origin,
+	string destination) {
+	
+	Flight flight(
+		airline, number,
+		departureTime, arrivalTime,
+		departureDate, arrivalDate,
+		origin, destination);
+
+	flights.push_back(flight);
+}
+
+Flight& Schedule::operator[](int index) {
+	return flights[index];
+}
+
 void Schedule::display() {
 	cout << " ___________________________________________________________________________________ " << endl;
 	cout << "| # | Airline  | Number |        Time         |          Date           |    Route  |" << endl;

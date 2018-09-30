@@ -11,16 +11,19 @@ int main()
 
 	Passenger passenger("Jane", "Doe");
 
-	Flight flight(
+	Schedule schedule;
+	schedule.addFlight(
 		"American", "AA123",
 		"7:00 AM", "12:00 PM",
 		"12/01/2018", "12/01/2018",
 		"SEA", "HOU");
+	schedule.addFlight(
+		"United", "UA246",
+		"8:00 AM", "11:00 AM",
+		"12/01/2018", "12/01/2018",
+		"SEA", "CHI");
 
-	Schedule schedule;
-	schedule.pushFlight(flight);
-
-	Ticket ticket(passenger, flight);
+	Ticket ticket(passenger, schedule[0]);
 
 	// TODO: Reserve a Seat
 
@@ -28,7 +31,7 @@ int main()
 	schedule.display();
 
 	// Flight Details
-	flight.display();
+	schedule[1].display();
 
 	// Display Passenger Information
 	passenger.display();
