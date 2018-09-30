@@ -4,6 +4,8 @@
 class Flight
 {
 public:
+
+	//Getter and Setter
 	void setNumber(const std::string flightNumber);
 	std::string getNumber();
 private: 
