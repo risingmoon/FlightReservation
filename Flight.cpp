@@ -24,7 +24,13 @@ Flight::Flight(
 	destination(flightDestination) {}
 
 void Flight::display() {
-	cout << "Flight Number: " << getNumber() << endl;
+	cout << "Flight Information" << endl;
+	cout << string(21, '-') << endl;
+	cout << "Airline: " << getAirline() << endl;
+	cout << " Number: " << getNumber() << endl;
+	cout << "   Time: " << getDepartureTime() << "-" << getArrivalTime() << endl;
+	cout << "   Date: " << getDepartureDate() << "-" << getArrivalDate() << endl;
+	cout << "  Route: " << getOrigin() << "-" << getDestination() << endl;
 	cout << endl;
 }
 
