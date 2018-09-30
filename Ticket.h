@@ -5,14 +5,20 @@
 class Ticket
 {
 public:
-	Ticket(Passenger& ticketPassenger, Flight& ticketFlight);
+	Ticket() = default;
+	//Ticket(Passenger& ticketPassenger, Flight& ticketFlight);
 
+	//Getters and Setters
+	void setPassenger(Passenger *ticketPassenger);
 	Passenger& getPassenger();
+
+	void setFlight(Flight *flight);
 	Flight& getFlight();
+
 	void display();
 
 private:
-	Passenger& passenger;
-	Flight& flight;
+	Passenger *passenger = nullptr;
+	Flight *flight = nullptr;
 };
 

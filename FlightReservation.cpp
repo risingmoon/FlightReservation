@@ -9,7 +9,8 @@
 int main()
 {
 
-	Passenger passenger("Jane", "Doe");
+	Passenger passenger;
+	Ticket ticket;
 
 	Schedule schedule;
 	schedule.addFlight(
@@ -23,7 +24,9 @@ int main()
 		"12/01/2018", "12/01/2018",
 		"SEA", "CHI");
 
-	Ticket ticket(passenger, schedule[0]);
+	//Ticket ticket(passenger, schedule[0]);
+	ticket.setPassenger(&passenger);
+	ticket.setFlight(&schedule[0]);
 
 	// TODO: Reserve a Seat
 
@@ -31,10 +34,10 @@ int main()
 	schedule.display();
 
 	// Flight Details
-	schedule[1].display();
+	ticket.getFlight().display();
 
 	// Display Passenger Information
-	passenger.display();
+	ticket.getPassenger().display();
 
 	// Display User Ticket Information
 	ticket.display();
