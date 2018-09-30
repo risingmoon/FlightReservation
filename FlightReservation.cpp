@@ -9,6 +9,8 @@
 int main()
 {
 	// TODO: Reserve a Seat
+	Passenger passenger("Jane", "Doe");
+
 	Flight flight(
 		"American", "AA123",
 		"7:00 AM", "12:00 PM",
@@ -23,8 +25,6 @@ int main()
 
 	// Flight Details
 	flight.display();
-
-	Passenger passenger("Jane", "Doe");
 
 	// Display Passenger Information
 	passenger.display();
